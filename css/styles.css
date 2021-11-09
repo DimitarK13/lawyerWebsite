@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+nav ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: #333;
+    width: 100%;
+    top: 55px;
+    left: 0;
+    padding: 2em 0;
+    color: #fff;
+    display: none;
+}
+
+nav ul a {
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+nav ul img {
+    width: 35px;
+}
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(/images/bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1em 1.5em;
+    border: 3px solid #333;
+    font-size: 1.125rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 4em;
+    width: max-content;
+    transition: background 250ms, color 250ms;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.white {
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.white:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #000;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 white;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 1em;
+    text-shadow: 2px 2px 0 #333;
+}
+
+#expertiese {
+    padding: 1.5rem;
+    margin: 2.5em 0;
+}
+
+#expertiese h1 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+#expertiese ul li {
+    font-size: 1.2rem;
+    margin-top: 1em;
+    padding-bottom: .2em;
+    border-bottom: 1px solid #333;
+}
+
+#contact {
+    margin: 2.5em 0 0;
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fff;
+}
+
+#contact h1 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+#contact p {
+    margin-bottom: 2em;
+    font-size: 1.2rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5em auto;
+}
+
+#contact label {
+    font-size: 1.2rem;
+    margin-bottom: .5em;
+}
+
+#contact input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.5em;
+    color: #fff;
+}
+
+.nameEmail {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+#copyright {
+    padding: .5rem 1.5rem;
+    font-size: .85rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#copyright a {
+    color: #90f;
+}
+
+@media (min-width: 800px) {
+    #menuToggler {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+    }
+
+    nav ul a {
+        color: #333;
+    }
+
+    .hero {
+        padding: 0 3rem;
+    }
+
+    nav {
+        padding: 1rem 3rem;
+    }
+
+    #expertiese ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em 3em;
+        justify-content: center;
+    }
+
+    #expertiese ul li {
+        flex-basis: 45%;
+    }
+
+    .flex-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10em;
+    }
+
+    #contact form {
+        align-items: center;
+    }
+
+    #contact input, textarea {
+        width: 600px;
+    }
+}
